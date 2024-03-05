@@ -12,7 +12,7 @@ import { externalWeb } from './pages/external.js';
 const app = express();
 const port = 4811;
 app.use(express.static("public"))
-app.get('/', (req, res) => res.send(homePage()));
+app.get('https://mcepulis.github.io/project-express/', (req, res) => res.send(homePage()));
 app.get('/about', (req, res) => res.send(aboutPage()));
 app.get('/contact-us', (req, res) => res.send(contactUsPage()));
 app.get('/services', (req, res) => res.send(servicesPage()));
