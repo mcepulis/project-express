@@ -2,34 +2,34 @@
 
 const servicesProject = [
     {
-        id: 'marius',
+        id: '1',
         name: 'Construction',
-        href: '/projects/marius',
+        href: '/1',
     },
     {
-        id: 'petras',
+        id: '2',
         name: 'Marketing',
-        href: '/projects/petras',
+        href: '/2',
     },
     {
-        id: 'marius',
+        id: '3',
         name: 'Manufacturing',
-        href: '/projects/marius',
+        href: '/3',
     },
     {
-        id: 'giedrius',
+        id: '4',
         name: 'Technology',
-        href: '/projects/giedrius',
+        href: '/4',
     },
     {
-        id: 'petras',
+        id: '5',
         name: 'Architecture',
-        href: '/projects/petras',
+        href: '/5',
     },
     {
-        id: 'giedrius',
+        id: '6',
         name: 'Entertainment',
-        href: '/projects/giedrius',
+        href: '/6',
     },
 ];
 

@@ -1,3 +1,4 @@
+import { servicesProject } from "../data/servicesProjects.js";
 import { servicesData } from "../data/servicesData.js";
 import { servicesUser } from "../data/servicesUsers.js";
 import { PageTemplate } from "../lib/PageTemplate.js";
@@ -28,6 +29,8 @@ class TeamUser extends PageTemplate {
                 break;
             }
         }
+
+    
    
 return `
 <div class="container bootdey flex-grow-1 container-p-y">

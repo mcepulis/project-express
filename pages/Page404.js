@@ -1,8 +1,8 @@
 import { PageTemplate } from "../lib/PageTemplate.js";
 
 class Page404 extends PageTemplate {
-    constructor() {
-        super();
+    constructor(time) {
+        super(time);
         this.pageTitle = '404';
         this.page = '404';
     }

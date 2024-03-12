@@ -1,8 +1,8 @@
 import { PageTemplate } from "../lib/PageTemplate.js";
 
 class PageHome extends PageTemplate {
-    constructor() {
-        super();
+    constructor(time) {
+        super(time);
         this.page = 'home';
     }
 
