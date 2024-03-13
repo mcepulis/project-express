@@ -35,18 +35,18 @@ function timeToWords() {
         wordHour = " valandų";
     }
         
-    if (mm == 1 && mm == 21 && mm == 31 && mm == 41 && mm == 51) {
+    if (mm == 1 || mm == 21 || mm == 31 || mm == 41 || mm == 51) {
          wordMinute = " minutė";
-    } else if (mm >= 10 && mm <= 20) {
+    } else if (mm >= 10 && mm <= 20 || mm == 30 || mm == 40 || mm == 50) {
         wordMinute = " minučių";
     } else {
          wordMinute = " minutės";
     }
   
 
-    if (ss == 1 && ss == 21 && ss == 31 && ss == 41 && ss == 51) {
+    if (ss == 1 || ss == 21 || ss == 31 || ss == 41 || ss == 51) {
          wordSecond = " sekundė";
-    } else if (ss >= 10 && ss <= 20) {
+    } else if (ss >= 10 && ss <= 20 || ss == 30 || ss == 40 || ss == 50) {
          wordSecond = " sekundžių";
     } else {
          wordSecond = " sekundės";
@@ -57,3 +57,4 @@ function timeToWords() {
 } 
 
 export { timeToWords }
+

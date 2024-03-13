@@ -29,7 +29,7 @@ apiRouter.get('/api/dalyba/:num1/:num2', (req, res) => {
 apiRouter.get('/api/abbr/:name/:surname', (req, res) => {
     const name = req.params.name;
     const surname = req.params.surname;
-    res.send(`${name[0]}.${surname[0]}`.toLocaleUpperCase());
+    res.send(`${name[0]}.${surname[0]}`);
     
 });
 
