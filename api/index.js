@@ -42,8 +42,7 @@ apiRouter.get('/api/time', (req, res) => {
 // pvz.: 10:57:14 => desimt valandu, penkiasdesimt septynios minutes, keturiolika sekundziu
 // pasistenkti apgalvoti visas galimas gramatikos situacijas
 apiRouter.get('/api/time-as-text', (req, res) => {
-    const timeAsText = timeToWords();
-    return res.send(timeAsText);
+    return res.send(timeToWords());
 });
 
 
