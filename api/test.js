@@ -5,7 +5,7 @@ const testRouter = Router();
 
 testRouter.get('/test', (req, res) => {
     const page = new testWWW(req.params);
-    res.send(page.html());
+    res.send(page.render());
 });
 
 

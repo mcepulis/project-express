@@ -1,19 +1,22 @@
+import { PageTemplate } from '../lib/PageTemplate.js';
 
-
-class testWWW {
+class testWWW extends PageTemplate {
     constructor() {
+    super();
     this.name = 'Greetings Name Test'
     }
 
-    html() {
-        return `<h1>${this.name}</h1>
-        <p id="resultParagraph"></p>
-        <form action="" id="loginForm">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value=""><br>
-        <input type="submit" value="Submit">
-        </form>
-   
+    main() {
+        return `
+        <div class="container">
+            <h1>${this.name}</h1>
+            <p id="resultParagraph"></p>
+            <form action="" id="loginForm">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value=""><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
         <script>
             document.getElementById("loginForm").addEventListener("submit", (e) => {
                 e.preventDefault();
