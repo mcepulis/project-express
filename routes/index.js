@@ -14,6 +14,8 @@ import { Project } from '../pages/PageProject.js';
 
 const router = Router();
 
+
+
 router.get('/', (req, res) => {
     const page = new PageHome(req.laikas);
     res.send(page.render());

@@ -1,4 +1,5 @@
-import { timeToWords } from './timeToWords.js';
+import { greetingsName } from '../lib/Greetings.js';
+import { timeToWords } from '../lib/timeToWords.js';
 import { Router } from "express";
 
 const apiRouter = Router();
@@ -43,6 +44,11 @@ apiRouter.get('/api/time', (req, res) => {
 // pasistenkti apgalvoti visas galimas gramatikos situacijas
 apiRouter.get('/api/time-as-text', (req, res) => {
     return res.send(timeToWords());
+});
+
+apiRouter.get('/api/greetings/:name', (req, res) => {
+    const name = req.params.name;
+    return res.send("Sveiki " + greetingsName(name));
 });
 
 
